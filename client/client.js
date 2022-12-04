@@ -3,7 +3,7 @@ localTime = utcDate - utcDate.getTimezoneOffset() * 60 * 1000
 localDate = new Date(localTime)
 
 document.getElementById('dateTime').value = localDate.toISOString().substring(0, 16)
-document.getElementById('idTelegram').value = '931005531'
+document.getElementById('idTelegram').value = '5311264729'
 document.getElementById('text').value = 'Сделай домашнее заание!'
 
 const onClickSave = async (e) => {
