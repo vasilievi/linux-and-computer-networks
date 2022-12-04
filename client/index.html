@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Напоминание в Telegram</title>
+</head>
+
+<body>
+    <div class="m-5">
+        <h4 class="mb-3">Напоминание в Telegram</h4>
+        <a href="http://t.me/LinuxIsCoolbot">http://t.me/LinuxIsCoolbot</a>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label>Дата и время напоминания</label>
+                    <input id="dateTime" type="datetime-local" class="form-control" />
+                </div>
+                <div class="col">
+                    <label>ID чата Telegram</label>
+                    <input id="idTelegram" type="text" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Текст напоминания</label>
+                    <input id="text" type="text" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button id="saveButton" class="btn btn-primary mt-3" type="button" onclick="onClickSave()">Сохранить</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
